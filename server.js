@@ -15,6 +15,7 @@ import contactRoutes from "./routes/contactRoutes.js";
 
 // ✅ Load environment variables
 dotenv.config();
+console.log("MONGO_URI is:", process.env.MONGO_URI);
 
 // ✅ Create express app
 const app = express();
