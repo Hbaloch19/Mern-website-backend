@@ -30,10 +30,15 @@ const __dirname = path.dirname(__filename);
 // ✅ Middlewares
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://mern-website-frontend-6xbg.vercel.app"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
 
 // ✅ Serve images folder statically
 app.use("/images", express.static(path.join(__dirname, "images")));
