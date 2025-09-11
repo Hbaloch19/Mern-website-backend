@@ -11,11 +11,11 @@ import connectDB from "./config/db.js";
 import productRoutes from "./routes/productRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
-import contactRoutes from "./routes/contactRoutes.js";
-
+import contactRoutes from "./routes/contactRoutes.js"
 // ✅ Load environment variables
 dotenv.config();
 console.log("MONGO_URI is:", process.env.MONGO_URI);
+
 
 // ✅ Create express app
 const app = express();
